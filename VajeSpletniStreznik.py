@@ -1,250 +1,229 @@
-# var = complex (3.1)
+# var_bool = False
+# print(var_bool*True)
+# var_bool1 = True
+# var_a = 5
+# print(var_bool1*var_a)
 
-# var 
-# print (var)
+
+# var_int = int(1.0)
+# var_float = float(1.1)
+# var_complex = complex(1.1 +1j) ## kompleksno stevilo
+# print(f'int {var_int}, float {var_float}, complex {var_complex}')
 
 # var_str = "1,2,3"
-# var_array = [1,2,3]
+# var_Array = [1,2,3]
 # var_tuple = (1,2,3)
+# var_Array[0] = 10
+# print(f'string {var_str}, array {var_Array}, tuple {var_tuple}')
 
-# var_array[0] = 2
-# print (var_array)
+#dictionary
 
-# var_dict = {"faks" : "FERI", "mesto" : "Maribor"}
-# var_dict["faks"]
-# print (var_dict)
+# var_dic = {"faks":"FIS", "faks2":"FAMNIT"}
+# var_dicAmer = {"Ime":"Amer", "Primek":"Cengic"}
+# print(f'faks {var_dic["faks"]}, faks2 {var_dic["faks2"]}')
+# print(f'Ime {var_dicAmer["Ime"]}, Primek {var_dicAmer["Primek"]}')
 
+# var_set = {"ena","dve","tri"}
+# var_set.add("štiri")
+# var_set.add("pet")
+# var_set.add("sedam")
+# var_set.remove("dve")
+# print(f'set {var_set}')
 
-# var_set = {"ena", "dve"}
-# var_set.add("tri")
-# var_set.add("tri")
-# var_set.add("tri")
+# class Person:
+#     def __init__(self, name, surname):
+#         self.name = name
+#         self.surname = surname
 
-# print (var_set)
-
-# num = [1,2,3,4,5]
-
-# print(num[1:4])
-
-# print(num[1:4:2])
-
-# print(num[5:-6:-1])
-
-# event = [i for i in num if i%2 ==0]
-
-# print(sorted((num[5:-6:-1])))
+#     def __str__(self):
+#         return f'{self.name} {self.surname}'
+# print(Person("Amer", "Cengic"))
 
 
-# num.append(6)
-# print(num)
+# list manipulation
 
-# print(num.index(3))
+# nums = [1,2,3,4,5]
 
-# num2 = num
-# num2.append(7)
-# print(num)
+# print(nums[1:4]) # slicing
+# print(nums[1:4:2]) # slicing with step
+# print(nums[-1]) # reverse list
 
-# s = "Hello World"
+# nums = [1,2,3,4,5]
+# reversed_nums = nums[::-1]
+# print(reversed_nums)
+
+# print(nums[::2]) # slicing with step, every second element
+
+# evnts = [x for x in nums if x%2==0] # list comprehension, even numbers
+# print(evnts)
+
+# print(sorted(reversed_nums))
+
+# nums.append(6)
+# print(nums)
+
+# print(nums.index(3))
+
+# nums2= nums[:]
+# nums2.append(7)
+# print(nums,nums2)
+
+# print(nums+nums2)
+
+# print(nums*2)
+
+
+#string manipulation
+
+# s = "hello amer"
+# d = " amer cengic "
+
 # print(s.upper())
-# print(s.strip(),"a")
 
-# print("elo" in s)
+# print(d.strip())
 
-# s_list = "a,b,c,d"
+# print("wis" in s) 
+
+# s_list = "a ,b ,c ,d"
 # print(s_list.split(","))
 # print([x.strip() for x in s_list.split(",")])
 
-# abc = ['a', 'b', 'c']
-# print("\n". join(abc))
 
-# print(s+s)
+# abc = ["a", "b", "c"]
+# print("\n".join(abc))
 
-# # a = [1,2,3]
-# # for i in a:
-# #     print(i)
-# # for i in range(len(a)):
-# #     print(a[i])
-# # while True:
-# #     if(i>3):
-# #         break
-# #     print(a[i])
-# #     i+=1
+# print(s+s_list)
 
-# # a = [[1,2,3], [4,5,6]]
-# # for i in a:
-# #     for j in i:
-# #         print(j)
-# # for i in range(0,3):
-# #     for j in range(0,3):
-# #         print(a[i][j])
-# a = 3
-# if a<1:
+
+# a = [1,2,3]
+
+# for i in a:
+#     print(i)
+# for i in range(0,len(a)):
+#     print(a[i])
+
+# for i in range(1,3+1):
+#     print(i)
+
+
+
+# i = 1
+# while i <= 4:
+#     print(i)
+#     i+=1
+
+# while True:
+#     if(i>6):
+#         break
+#     print(i)
+#     i+=1
+
+# 2D array 
+# equivalent loops 
+# a = [[1,2,3],[1,2,3]]
+
+# for i in a:
+#     for j in i:
+#         print(j)
+        
+# print("\n")
+# for i in range(0,len(a)):
+#     for j in range(0,len(a[i])):
+#         print(a[i][j])
+
+# a = 0.4
+
+# if a <1:
 #     print(0)
-# elif a<2:
-#     print(1)
+# elif a <2:
+#    print(1)
 # else:
-#     print(2)
+#    print(2)
 
-# def func(a,b,c = 19):
+
+# def func(a,b,c = 10):
 #     return max(a,b,c)
-# a = 2
-# print(func(a,1,2))
 
-
-# def func(a):
-#     a = a + a
-#     print(a)
-# a = 10
-# print(func(a), a)
-
+# a = 0
+# print(func(a,1))
+# print(func(a,1,-1))
 
 # def func(a):
-#     a.append(10)
+#     a = a +a 
 #     print(a)
-# a = [10]
+
+# a = 1
 # func(a)
 # print(a)
 
-# def func(item, seznam=[]):
-#     seznam.append(item)
-#     return seznam
-# func("a")
-# func("a")
-# print(func("a"))
-
-# import math 
-
-# math.sqrt(16)
-# import math as m
-# m.sqrt(16)
-# from math import sqrt as s 
-# s(16)
-
-# from math import *
-# sqrt(16)
-
-# import traceback
-
-# def age_ratio(age1, age2):
-#     if age1 < 0 or age2 < 0:
-#         raise ValueError("Age cannot be negative")
-#     print(f"The age ratio is: {age1/age2}")
-
-# try: 
-#     age_ratio(0, 0)
-# except ValueError as e:
-#     print("error:", e)
-#     traceback.print_exc()
-# print('END')
-
-
-# a = [1,2,3]
-
-# B = A 
-# print(id(A),id(B))
-
-
-# x = 10
-# y = x
-# print(id(x), id(y))
-
-
-# import gc
-# import time 
-
-# def log_execution_time(func):
-#     print("starting")
-
-#     def wrapper(*args, **kwargs):
-#         start_time = time.time()
-#         func(*args, **kwargs)
-#         print(f"Finished in {time.time() - start_time} seconds")
-#         return wrapper
-    
-#     def func(a):
-#         print(a)
-#     func(10)
-
-
-# def cycle(n):
-#     w = []
-#     y = []
-#     w.append(y)
-#     y.append(w)
-# cycle()
-# gc.collect()  
-
-# import sys
-# a = [1,2,3]
-# print(sys.getrefcount(a))
-# gc.collect()
+# b = [1,2]
+# func(b)
 # print(b)
 
-# class Car: 
-#     def __init__(self, make, model):
-#         self.make = make
-#         self.model = model
+# name = input("what is your name")
+# print(f"Hello, {name}")
 
-#     def display_info(self):
-#         print(f"Car make: {self.make}, model: {self.model}")
+# lines = ["Prvi stavek.\nDrugi stavek."]
 
-# avto1 = Car("Toyota", "Corolla", "red")
-
-
-# ## Naloga 1
-
-# playlist = ["Lo-Fi Beats", "Classic Rock", "Synthwave", "Jazz Fusion", "Techno", "Indie Pop"]
-
-# 1. Skopirajte "playlist"
-# 2. dodajte kopiji "Metal"
-# 3. odstranite kopiji vse glasbene zvrsti, ki imajo v imenu več kot eno besedo
-# 4. izpišite vse glasbene zvrsti, ki so v "playlist", ne pa v kopiji
-
-
-playlist = ["Lo-Fi Beats", "Classic Rock", "Synthwave", "Jazz Fusion", "Techno", "Indie Pop"]
-
-playlist_copy = playlist.copy()
-
-playlist_copy.append("Metal")
-
-kopija = [zanr for zanr in playlist_copy if len(zanr.split()) == 1]
-
-for zanr in playlist:
-    if zanr not in kopija:
-        print(zanr)
-
-print(kopija)
-print(playlist_copy)
-
-# ## Naloga 2
-theater = [
-    ['O', 'X', 'O', 'O'],  # Row 0
-    ['X', 'X', 'O', 'X'],  # Row 1
-    ['O', 'O', 'O', 'O']   # Row 2
-]
-
-
-theater_popravljeno = [list(vrstica) for vrstica in zip(*theater)]
-
-for vrstica in theater_popravljeno:
-    print(vrstica)
-
-
-# Nekdo je zamešal vrstico in stolpec pri izdelavi aplikacije za sedežni red kinodvorane!
-
-# Spremenite "theater" tako, da bo pravilno!
-
-
-# ## Naloga 3
-
-# Napišite funkcijo, ki posodablja zalogo v trgovini. Če predmet ne obstaja, ga ustvari. Zaloga se lahko polni in prazni (ne more pa iti pod nič!). Zgodovina se beleži kot "+-5 jabolk - uspešno/neuspešno."
-
-
-zaloga = {"jabolka": 10, "banane": 5}
-#zaloga.update({"ananas":20}}) za neposredno spreminjanje recimo
-
-# Napišite funkciju koja ažurira zalihu u prodavnici. Ako predmet ne postoji, treba ga kreirati. Zaliha se može povećavati i smanjivati (ali ne može pasti ispod nule). Historija se bilježi u obliku: "+-5 jabuka - uspješno/neuspješno."
-
-def posodobi_zalogo(artikel, kolicina, zgodovina=[]):
+# # 'w' is for writing, this creates file
+# with open('text.txt', 'w') as file:
+#     file.writelines(lines)
     
-    pass
+# # 'r' is for reading
+# with open('text.txt', 'r') as file:
+#     content = file.read()
+#     print(content)
+
+# import csv
+
+# data = [
+#     ['student_ID', 'Name', 'Family name'],
+#     [1, 'Peter', 'FISer'],
+#     [2, 'Nastja', 'de la FIS']
+# ]
+
+# #write csv
+# with open('students.csv', 'w', newline='') as file:
+#     writer = csv.writer(file)
+#     writer.writerows(data)
+    
+# #read csv
+# with open('students.csv', 'r') as file:
+#     reader = csv.DictReader(file) # Loads each row as a dictionary
+#     for row in reader:
+#         print(f"Student {row['student_ID']} is {row['Name']} {row['Family name']}")
+
+
+import json
+
+# # dictionary as input
+# target_profile = {
+#     "id": None,
+#     "name": "Sarah Connor",
+#     "isTerminated": False,
+#     "params": [0, 170, 60],
+#     "address": None
+# }
+
+# # convert from dict to JSON
+# json_string = json.dumps(target_profile, indent=1)
+# print(json_string)
+
+# # Save to a .json file
+# with open('target_profile.json', 'w') as file:
+#     json.dump(target_profile, file, indent=4)
+
+# with open('target_profile.json','r') as file:
+#     data = json.load(file)
+
+
+# print(f"{data['name']} was terminated: {data['isTerminated']}")
+
+x = "outside"
+
+def my_function():
+    x = "inside" # This SHADOWS the global x
+    print(f"{x}")
+
+my_function()
+print(f"{x}")
