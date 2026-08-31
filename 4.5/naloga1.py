@@ -33,3 +33,4 @@ date.setComponentByName('mesec',11)
 date.setComponentByName('dan', 20)
 
 print(date['leto'].prettyPrint(), date['mesec'].prettyPrint(), date['dan'].prettyPrint())
+
